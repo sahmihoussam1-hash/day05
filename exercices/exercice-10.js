@@ -15,3 +15,9 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function NewDomaine(email) {
+    let index0= email.indexOf("@");
+
+    return email.slice(index0 + 1 );
+}
+console.log(NewDomaine("contact@youcode.ma"))
