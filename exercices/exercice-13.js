@@ -15,3 +15,15 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function formater(mnt) {
+
+  mnt = String(mnt);
+
+  let Newform = mnt.slice(0, 1) + " " + mnt.slice(1, 4) + " " + mnt.slice(4, 7) + " MAD";
+  
+  return Newform;
+}
+
+console.log(formater(1234567));
+
+

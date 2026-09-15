@@ -15,3 +15,18 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+
+function compterMotsDebutants(phrase) {
+    let mots = phrase.split(" ");
+    let compteur = 0;
+
+    for (let i = 0; i < mots.length; i++) {
+    
+    if (mots[i] !== "") { 
+    compteur++;
+}
+    }
+    return compteur;
+
+}
+console.log(compterMotsDebutants("Bonjour le monde"))

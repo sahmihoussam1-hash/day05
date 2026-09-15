@@ -15,3 +15,14 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let tweet = "Beau temps à #Nador aujourd'hui avec la team #YouCode !";
+let mots = tweet.split(" ");
+let hashtags = [];
+
+for (let mot of mots){
+
+   if (mot[0] === "#") {
+      hashtags.push(mot);
+       }
+}
+ console.log(hashtags)

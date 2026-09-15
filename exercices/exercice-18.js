@@ -15,3 +15,16 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function CompterE(paragraphe){
+    let compteur = 0;
+
+    for (let i=0; i < paragraphe.length ;i++){
+        if  (paragraphe [i].toLowerCase() === "e") {
+            compteur++;
+       }
+
+    }
+return compteur 
+}
+const text = "Aujourd'hui, j'ai fait une excellente séance à la salle de sport en poussant mes limites sur chaque exercice. Je ressors de là bien fatigué, mais vraiment satisfait du travail accompli";
+console.log(CompterE(text))
