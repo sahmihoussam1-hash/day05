@@ -15,3 +15,13 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function chiffrerCesar(texte, decalage) {
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let resultat = "";
+
+  for (let i=0 ; i > alphabet.length ; i++) {
+       let lettre = texte [i]
+       let estMajuscule = lettre === lettre.toUpperCase() && lettre !== letter.toLowerCase();
+       
+  }
+ }

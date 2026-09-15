@@ -23,4 +23,26 @@
 'use strict';
 
 // Découpe d'abord le problème en petites étapes.
-// TODO: écris ta solution ici.
+
+
+let tab = ["noob", "idiot", "nul"]
+let message = "Tu es vraiment un GROS NooB et un idiot !!"
+function filtrerMessage(message){
+    let text = message
+    message = message.split(" ")
+    text = text.toLowerCase().split(" ")
+    for (let i = 0;i<tab.length;i++ ) {
+        for (let j=0; j<text.length;j++) {
+           
+            if (text[j]==tab[i]){
+               message[j] = "*".repeat(message[j].length)
+            }
+        }
+
+    }
+
+
+
+    return message.join(" ")
+}
+console.log(filtrerMessage(message));

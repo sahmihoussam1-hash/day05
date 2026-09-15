@@ -17,3 +17,17 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function NewSlug(titre) {
+
+    let texteEnMin = titre.toLowerCase();
+ 
+    let texteSansPoint = texteEnMin.replace("!","");
+
+    let mots = texteSansPoint.trim().split(" ")
+
+   let Slug = mots.join("-");
+
+   return Slug ;
+ }
+ const TitreArticle = "Les 10 secrets de JavaScript !";
+ console.log(NewSlug(TitreArticle));
